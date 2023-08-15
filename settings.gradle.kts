@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Template"
-include ':app'
+rootProject.name = "MVVM"
+include(":app")

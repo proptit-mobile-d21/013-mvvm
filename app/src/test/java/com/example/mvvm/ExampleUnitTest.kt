@@ -1,4 +1,4 @@
-package dev.proptit.template
+package com.example.mvvm
 
 import org.junit.Test
 
