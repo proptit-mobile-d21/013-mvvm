@@ -34,7 +34,7 @@ class PasswordFragment : Fragment() {
             binding.passwordEditText.setText(newPassword)
         }
 
-        binding.helloTextView.text = getString(R.string.hello, sharedViewModel.username)
+        binding.helloTextView.text = getString(R.string.hello, sharedViewModel.username.value)
 
         binding.loginButton.setOnClickListener{
             findNavController().navigate(R.id.action_passwordFragment_to_usernameFragment)

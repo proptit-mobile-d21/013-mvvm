@@ -5,6 +5,6 @@
     <string name="username">username</string>
     <string name="next">next</string>
     <string name="password">password</string>
-    <string name="hello">Hello, %s</string>
+    <string name="hello">"Hello, %s"</string>
     <string name="login">login</string>
 </resources>
