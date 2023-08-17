@@ -20,6 +20,11 @@ class PasswordFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentPasswordBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         myViewModel.username.observe(viewLifecycleOwner) {
             binding.tvHello.text = "Hello $it"
         }
@@ -27,6 +32,5 @@ class PasswordFragment : Fragment() {
             Toast.makeText(requireContext(), "Login successful", Toast.LENGTH_SHORT)
                 .show()
         }
-        return binding.root
     }
 }

@@ -18,13 +18,16 @@ class UsernameFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentUsernameBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         binding.btnNext.setOnClickListener {
             myViewModel.setUsername(binding.edtUsername.text.toString().trim())
             findNavController().navigate(R.id.action_usernameFragment_to_passwordFragment)
         }
-        return binding.root
     }
 }
