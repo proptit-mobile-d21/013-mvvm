@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Template</string>
+    <string name="username">Username</string>
+    <string name="button">Button</string>
+    <string name="backButton">Back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello">Hello </string>
 </resources>
